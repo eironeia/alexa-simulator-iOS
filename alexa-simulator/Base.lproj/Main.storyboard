@@ -28,31 +28,45 @@
                                     <constraint firstAttribute="height" constant="46" id="oZm-5s-Boy"/>
                                     <constraint firstAttribute="width" constant="46" id="uRa-tI-jiF"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Speak"/>
                                 <connections>
                                     <action selector="microphonePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="154-xL-p0r"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Speak me honey &lt;3" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-Jd-p9Z">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Speak me honey &lt;3" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9b-Jd-p9Z">
                                 <rect key="frame" x="26" y="28" width="323" height="507"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cg-Wl-nwX">
+                                <rect key="frame" x="218" y="543" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="VC9-yp-pYq"/>
+                                    <constraint firstAttribute="height" constant="46" id="htK-sD-Vsc"/>
+                                </constraints>
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="readButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAA-Uc-4R8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="4Cg-Wl-nwX" firstAttribute="bottom" secondItem="Na6-1j-fs5" secondAttribute="bottom" id="7tz-11-Ap8"/>
                             <constraint firstItem="Na6-1j-fs5" firstAttribute="top" secondItem="T9b-Jd-p9Z" secondAttribute="bottom" constant="8" id="Aes-Ze-VZs"/>
                             <constraint firstItem="Na6-1j-fs5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DTZ-pm-N9A"/>
                             <constraint firstItem="T9b-Jd-p9Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Hz7-sY-9p4"/>
                             <constraint firstItem="T9b-Jd-p9Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="IqR-xR-6bZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="T9b-Jd-p9Z" secondAttribute="trailing" constant="10" id="Iyq-SM-4ua"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Na6-1j-fs5" secondAttribute="bottom" constant="78" id="XPm-61-MAc"/>
+                            <constraint firstItem="4Cg-Wl-nwX" firstAttribute="leading" secondItem="Na6-1j-fs5" secondAttribute="trailing" constant="8" id="ayG-VN-Bg1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="flightTextView" destination="T9b-Jd-p9Z" id="0MG-gU-ZyC"/>
                         <outlet property="microphoneButton" destination="Na6-1j-fs5" id="hY0-4a-PU8"/>
+                        <outlet property="readButton" destination="4Cg-Wl-nwX" id="tJ6-yb-LVA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

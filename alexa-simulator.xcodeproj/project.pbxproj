@@ -14,6 +14,7 @@
 		9C6731391E900BC900C2D9FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6731381E900BC900C2D9FE /* Assets.xcassets */; };
 		9C67313C1E900BC900C2D9FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C67313A1E900BC900C2D9FE /* LaunchScreen.storyboard */; };
 		9C6731441E900E0100C2D9FE /* UI+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6731431E900E0100C2D9FE /* UI+ViewController.swift */; };
+		9C6731461E90125600C2D9FE /* ReadAudio+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6731451E90125600C2D9FE /* ReadAudio+ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9C67313B1E900BC900C2D9FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C67313D1E900BC900C2D9FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6731431E900E0100C2D9FE /* UI+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+ViewController.swift"; sourceTree = "<group>"; };
+		9C6731451E90125600C2D9FE /* ReadAudio+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReadAudio+ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				9C67312E1E900BC900C2D9FE /* AppDelegate.swift */,
 				9C6731301E900BC900C2D9FE /* ViewController.swift */,
+				9C6731451E90125600C2D9FE /* ReadAudio+ViewController.swift */,
 				9C6731431E900E0100C2D9FE /* UI+ViewController.swift */,
 				9C6731321E900BC900C2D9FE /* Main.storyboard */,
 				9C6731381E900BC900C2D9FE /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6731461E90125600C2D9FE /* ReadAudio+ViewController.swift in Sources */,
 				9C6731311E900BC900C2D9FE /* ViewController.swift in Sources */,
 				9C67312F1E900BC900C2D9FE /* AppDelegate.swift in Sources */,
 				9C6731441E900E0100C2D9FE /* UI+ViewController.swift in Sources */,

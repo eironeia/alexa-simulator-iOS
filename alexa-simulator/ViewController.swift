@@ -8,6 +8,7 @@
 
 import UIKit
 import Speech
+import AVFoundation
 
 enum SpeechStatus {
     case ready
@@ -15,13 +16,14 @@ enum SpeechStatus {
     case unavailable
 }
 
-
-
-
 class ViewController: UIViewController {
     
+    @IBOutlet var readButton: UIButton!
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var flightTextView: UITextView!
+    
+    let synth = AVSpeechSynthesizer()
+    var myUtterance = AVSpeechUtterance(string: "")
     
     var status = SpeechStatus.ready {
         didSet {
@@ -98,6 +100,10 @@ class ViewController: UIViewController {
             node.removeTap(onBus: 0)
         }
         recognitionTask?.cancel()
+    }
+    @IBAction func readButtonPressed(_ sender: Any) {
+
+        self.performReadTextView()
     }
     
     @IBAction func microphonePressed() {
