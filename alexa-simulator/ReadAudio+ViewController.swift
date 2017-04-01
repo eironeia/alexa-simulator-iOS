@@ -11,11 +11,10 @@ import AVFoundation
 
 extension ViewController {
 
-    func performReadTextView() {
-        myUtterance = AVSpeechUtterance(string: "Hello world holy molly")
+    func speakText(text: String) {
+        myUtterance = AVSpeechUtterance(string: text)
         myUtterance.rate = 0.3
         synth.speak(myUtterance)
-        
     }
 }
 

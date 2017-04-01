@@ -9,6 +9,7 @@
 import UIKit
 import Speech
 import AVFoundation
+import Alamofire
 
 enum SpeechStatus {
     case ready
@@ -18,7 +19,6 @@ enum SpeechStatus {
 
 class ViewController: UIViewController {
     
-    @IBOutlet var readButton: UIButton!
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var flightTextView: UITextView!
     
@@ -101,11 +101,7 @@ class ViewController: UIViewController {
         }
         recognitionTask?.cancel()
     }
-    @IBAction func readButtonPressed(_ sender: Any) {
 
-        self.performReadTextView()
-    }
-    
     @IBAction func microphonePressed() {
         switch status {
         case .ready:
